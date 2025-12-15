@@ -1,0 +1,24 @@
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(6, 1fr); /* 6주 고정 */
+  gap: 5px;
+}
+
+.date-cell {
+  border: 2px solid #ccc;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.date-cell.has-schedule {
+  background-color: #a0d8f1;
+}
+
+.calendar-weekdays {
+  display: grid;
+  text-align: center;
+  grid-template-columns: repeat(7, 1fr);
+  font-weight: bold;
+}

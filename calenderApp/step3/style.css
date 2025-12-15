@@ -1,0 +1,36 @@
+#calendar-container {
+  width: 700px;
+  margin-bottom: 20px;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(6, 1fr); /* 6주 고정 */
+  gap: 5px;
+}
+
+.date-cell {
+  border: 2px solid #ccc;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.date-cell.has-schedule {
+  background-color: #a0d8f1;
+}
+
+.calendar-weekdays {
+  display: grid;
+  text-align: center;
+  grid-template-columns: repeat(7, 1fr);
+  font-weight: bold;
+}
+
+.date-cell.selected {
+  background-color: #333; /* 진한 배경색 */
+  color: white;           /* 글씨색 */
+  font-weight: bold;
+  border-radius: 5px;     /* 원하면 모서리 둥글게 */
+}

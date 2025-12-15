@@ -1,0 +1,19 @@
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* 7열 */
+  grid-auto-rows: 80px; /* 각 날짜 칸 높이 */
+  gap: 5px; /* 칸 사이 간격 */
+}
+
+.date-cell {
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: #f9f9f9;
+}
+
+.date-cell.has-schedule {
+  background-color: #a0d8f1; /* 일정 있는 날 표시 */
+}

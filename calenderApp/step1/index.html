@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>My Frontend Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id = "c1" class="calendar-grid"></div>
+<div id = "c2" class="calendar-grid"></div>
+
+<div class="calendar">
+  <div class="calendar-header">
+    <button id="prev-month">&lt;</button>
+    <span id="month-year">2025-12</span>
+    <button id="next-month">&gt;</button>
+  </div>
+  <div class="calendar-weekdays">
+    <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
+  </div>
+  <div class="calendar-dates">
+    <!-- JS로 각 날짜 셀 생성 -->
+    <!-- 예: <div class="date-cell" data-date="2025-12-01">1</div> -->
+  </div>
+</div>
+
+<script src="calender.js"></script>
+</body>
+</html>
